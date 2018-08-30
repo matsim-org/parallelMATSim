@@ -3,11 +3,11 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.matsim</groupId>
-	<artifactId>matsim-example-project</artifactId>
+	<artifactId>parallel</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>MATSim example project</name>
-	<description>MATSim example project</description>
+	<name>parallel</name>
+	<description>parallel</description>
 
 	<repositories>
 		<repository>
@@ -22,7 +22,7 @@
 			<!-- This is the matsim "core": -->
 			<groupId>org.matsim</groupId>
 			<artifactId>matsim</artifactId>
-			<version>0.10.0</version>
+			<version>0.11.0-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
@@ -38,8 +38,18 @@
 			<groupId>org.matsim</groupId>
 			<artifactId>matsim</artifactId>
 			<type>test-jar</type>
-			<version>0.10.0</version>
+			<version>0.11.0-SNAPSHOT</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>mpj</groupId>
+			<artifactId>mpj</artifactId>
+			<version>0.44</version>
+		</dependency>
+		<dependency>
+			<groupId>org.matsim</groupId>
+			<artifactId>matsim-examples</artifactId>
+			<version>0.11.0-SNAPSHOT</version>
 		</dependency>
 
 	</dependencies>
@@ -82,7 +92,7 @@
 					</descriptorRefs>
 					<archive>
 						<manifest>
-							<mainClass>org.matsim.gui.MATSimGUI</mainClass>
+							<mainClass>org.matsim.parallel.RunParallel</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
