@@ -47,6 +47,9 @@ class RunParallel {
 		config.qsim().setSimEndtimeInterpretation( QSimConfigGroup.EndtimeInterpretation.onlyUseEndtime );
 		// yyyy need to assert this for parallel version
 
+		config.qsim().setUsingThreadpool( true );
+		// yyyy need to assert this for parallel version
+
 		final Scenario scenario = ScenarioUtils.loadScenario( config );
 
 		for ( Node node : scenario.getNetwork().getNodes().values() ) {
