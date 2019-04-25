@@ -2,6 +2,6 @@ export QUICK=-Dmaven.test.skip -Dmaven.javadoc.skip -Dsource.skip -Dassembly.ski
 export MPJ_HOME=/Users/kainagel/sw/mpj/mpj-v0_44/
 
 default:
-	mvn --offline -f ../matsim/matsim/pom.xml install ${QUICK}
-	mvn --offline -f ./pom.xml package ${QUICK}
+	mvn -f ../matsim/matsim/pom.xml install ${QUICK}
+	mvn -f ./pom.xml package ${QUICK}
 	/Users/kainagel/sw/mpj/mpj-v0_44/bin/mpjrun.sh -np 2 -jar target/parallel-0.0.1-SNAPSHOT-jar-with-dependencies.jar 
