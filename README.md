@@ -24,7 +24,7 @@ The work was pushed far enough that one could start with replacing the serializa
 
 ### Setup
 
-This is meant to work together with the 'parallelMatsim' branch of the 'matsim' repository.
+This is meant to work together with the `parallelMatsim` branch of the 'matsim' repository.
 
 Some steps that I remember to set this up:
 
